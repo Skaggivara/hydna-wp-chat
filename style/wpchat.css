@@ -1,0 +1,258 @@
+
+/* Reset
+================================================== */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+    
+/* Default styles
+================================================== */   
+
+
+.wp-chat-container a,
+.wp-chat-container a:link,
+.wp-chat-container a:active,
+.wp-chat-container a:visited,
+.wp-chat-container a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.wp-chat-container a:hover{
+    text-decoration: none;
+}
+
+
+
+/* wp-chat
+================================================== */
+.wp-chat-container{
+    background: #fff;
+    color: #333;
+    font-family: helvetica;
+    font-size: 1em;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.wp-chat-container strong{
+    font-weight: bold;
+}
+
+.wp-chat-container ul{
+    margin: 0;
+    padding: 0;
+}
+
+.wp-chat-container .wp-chat-status{
+    background: #ff5943;
+}
+
+.wp-chat-container .wp-chat-window{
+    display:none;
+    background: #fff;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+
+.wp-chat-container .wp-chat-window .wp-chat-input-field{
+    box-sizing: border-box;
+    color: #fff;
+    width: 76%;
+    border: none;
+    padding: 6px 8px;
+    font-family: helvetica;
+    font-size: 14px;
+    float: left;
+    background: none;
+    line-height: 1em;
+    outline: none;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.wp-chat-container .wp-chat-window .wp-chat-send-btn{
+    box-sizing: border-box;
+    display:inline-block;
+    width:20%;
+    margin: 6px 2% 0 2%;
+    float: right;
+}
+
+.wp-chat-container .wp-chat-window .wp-chat-messages{
+    box-sizing: border-box;
+    width: 70%;
+    float: left;
+    min-height: 120px;
+    max-height: 240px;
+    overflow: scroll;
+    padding: 8px;
+    background: #fff;
+}
+
+.wp-chat-container .wp-chat-window .wp-chat-messages .time{
+    color: #999;
+}
+
+.wp-chat-container .wp-chat-window .wp-chat-users{
+    box-sizing: border-box;
+    width: 30%;
+    border-left: 1px dashed #ccc;
+    float: left;
+    padding: 8px;
+    background: #fff;
+}
+.wp-chat-container .wp-chat-window .wp-chat-users h3{
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 0;
+}
+.wp-chat-container .wp-chat-window .wp-chat-users ul{
+    padding: 0.5em 0;
+}
+.wp-chat-container .wp-chat-window .wp-chat-users li{
+    list-style:disc inside;
+}
+
+.wp-chat-container .wp-chat-window .wp-chat-users h3{
+    font-weight: bold;
+}
+
+.wp-chat-container .wp-chat-status{
+    padding: 4px 8px;
+    color: #fff;
+}
+
+.wp-chat-container .wp-chat-status .wp-chat-status-label{
+    float: left;
+}
+
+.wp-chat-container .wp-chat-status .wp-chat-status-label .desc{
+    color: #ffcdca;
+}
+
+.wp-chat-container .wp-chat-status .wp-chat-start-btn{
+    float: right;
+}
+
+.wp-chat-container .wp-chat-controls{
+    background: #b74d46;
+    clear: both;
+}
+
+.wp-chat-container ::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ff8981;
+}
+.wp-chat-container :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ff8981;
+}
+.wp-chat-container ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ff8981;
+}
+.wp-chat-container :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ff8981;
+}
+.wp-chat-container button,
+.wp-chat-container button:active,
+.wp-chat-container button:visited,
+.wp-chat-container button:link,
+.wp-chat-container button:hover{
+    font-size: 0.875em;
+    line-height: 1em;
+    background: #ccc;
+    border: none;
+    padding: 8px 10px;
+    margin: 0;
+}
+
+/* Clearfix
+================================================== */
+.wp-chat-container .cf:before,
+.wp-chat-container .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.wp-chat-container .cf:after {
+    clear: both;
+}
+
+
+/* Grid
+================================================== */   
+.grid{
+    padding: 0 10px;
+}
+
+.grid .one-half,
+.grid .one-third,
+.grid .one-fourth,
+.grid .one-third,
+.grid .one-sixth{
+    float:left;
+    padding:25px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid .one-half .image,
+.grid .one-third .image,
+.grid .one-fourth .image,
+.grid .one-third .image,
+.grid .one-sixth .image{
+    display: block;
+    background-color: red;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.grid .one-half{
+    width: 50%;
+}
+.grid .one-third{
+    width: 33.333%;
+}
+.grid .one-fourth{
+    width: 25%;
+}
+.grid .one-fifth{
+    width: 20%;
+}
+.grid .one-sixth{
+    width: 15%;
+}
+
+/* Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+}
+
+/* Clearfix
+================================================== */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+

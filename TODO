@@ -1,0 +1,24 @@
+hydna-chat jquery plugin
+
+* fix styles
+* add post verification
+* add admin interface
+* make plugin page on github
+
+creates a chat interface using a hydna domain
+-----------------------------------
+* Your name is the same on all chats! Including when it changes in another instance
+* Links become links!
+* A dark and a light theme
+* Resolution independent
+* hide users
+
+-----------------------------------
+* Control interface when password is provided
+* See all chats on domain
+* widget that can see chats on entire blog?
+* block users by ip?
+
+-----------------------------------
+Issues 
+* how can you avoid user being malicious?
