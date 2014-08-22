@@ -117,7 +117,7 @@ if(!class_exists('WP_Chat')) {
             return implode($pass); //turn the array into a string
         }       
         
-        public function filter_content(){
+        public function filter_content($content){
             global $post;
     
             $domain = get_option('wp_chat_domain');
@@ -126,7 +126,7 @@ if(!class_exists('WP_Chat')) {
             return $content;
         }
 
-        public function filter_excerpt(){
+        public function filter_excerpt($content){
             global $wpdb, $post;
             // new content will be added after each post
             $use_in_excerpt = get_option('wp_chat_excerpt');
